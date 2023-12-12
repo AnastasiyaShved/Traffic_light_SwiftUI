@@ -11,8 +11,10 @@ struct Red: View {
  
     let width: CGFloat
     let height: CGFloat
-    let colorOn: Color
-    let colorOff: Color
+    
+    @Binding var red: Color
+    @Binding var yellow: Color
+    @Binding var green: Color
     
     var body: some View {
        
@@ -23,18 +25,14 @@ struct Red: View {
             VStack {
                 Circle()
                     .frame(width: width, height: height)
-                    .foregroundColor(colorOn)
+                    .foregroundColor(red)
                 Circle()
                     .frame(width: width, height: height)
-                    .foregroundColor(colorOff)
+                    .foregroundColor(yellow)
                 Circle()
                     .frame(width: width, height: height)
-                    .foregroundColor(colorOff)
+                    .foregroundColor(green)
             }
         }
     }
-}
-
-#Preview {
-    Red(width: 100, height: 100, colorOn: .red, colorOff: .gray)
 }
