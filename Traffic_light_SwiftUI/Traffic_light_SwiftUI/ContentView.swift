@@ -43,14 +43,13 @@ struct ContentView: View {
                 Text(" ")
                 Spacer()
                 
-                Red(width: width, height: height, red: $red, yellow: $yellow, green: $green)
+                TrafficLightColor(width: width, height: height, red: red, yellow: yellow, green: green)
                 Spacer()
                 Button(action: {
                     timerIsStart.toggle()
                 }, label: {
                     Text("\(textbtn.rawValue)")
                 })
-                
                 .buttonStyle(.borderedProminent)
                 Spacer()
                 Text(" ")
@@ -72,9 +71,7 @@ struct ContentView: View {
             red = .red
             yellow = .gray
             green = .gray
-            
             state = .redYellow
-
         case .redYellow:
             red = .red
             yellow = .yellow
@@ -99,7 +96,6 @@ struct ContentView: View {
         green = .gray
     }
 }
-
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

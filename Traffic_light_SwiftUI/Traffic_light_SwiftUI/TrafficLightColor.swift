@@ -1,5 +1,5 @@
 //
-//  Yellow.swift
+//  Red.swift
 //  Traffic_light_SwiftUI
 //
 //  Created by Apple on 12.12.23.
@@ -7,12 +7,14 @@
 
 import SwiftUI
 
-struct Yellow: View {
-   
+struct TrafficLightColor: View {
+ 
     let width: CGFloat
     let height: CGFloat
-    let colorOn: Color
-    let colorOff: Color
+
+    var red: Color
+    var yellow: Color
+    var green: Color
     
     var body: some View {
        
@@ -23,18 +25,16 @@ struct Yellow: View {
             VStack {
                 Circle()
                     .frame(width: width, height: height)
-                    .foregroundColor(colorOff)
+                    .foregroundColor(red)
                 Circle()
                     .frame(width: width, height: height)
-                    .foregroundColor(colorOn)
+                    .foregroundColor(yellow)
                 Circle()
                     .frame(width: width, height: height)
-                    .foregroundColor(colorOff)
+                    .foregroundColor(green)
             }
         }
     }
 }
 
-#Preview {
-    Yellow(width: 100, height: 100, colorOn: .yellow, colorOff: .gray)
-}
+
