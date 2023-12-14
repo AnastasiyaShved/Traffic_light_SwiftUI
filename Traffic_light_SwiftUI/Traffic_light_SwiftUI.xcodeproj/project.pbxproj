@@ -11,6 +11,7 @@
 		FA57D9DF2B27312900240D2F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA57D9DE2B27312900240D2F /* ContentView.swift */; };
 		FA57D9E12B27313100240D2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA57D9E02B27313100240D2F /* Assets.xcassets */; };
 		FA57D9E42B27313100240D2F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA57D9E32B27313100240D2F /* Preview Assets.xcassets */; };
+		FA5B8DB82B27BABF003290E5 /* TrafficLightColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5B8DB72B27BABF003290E5 /* TrafficLightColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		FA57D9DE2B27312900240D2F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FA57D9E02B27313100240D2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA57D9E32B27313100240D2F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FA5B8DB72B27BABF003290E5 /* TrafficLightColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficLightColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				FA57D9DC2B27312900240D2F /* Traffic_light_SwiftUIApp.swift */,
 				FA57D9DE2B27312900240D2F /* ContentView.swift */,
+				FA5B8DB72B27BABF003290E5 /* TrafficLightColor.swift */,
 				FA57D9E02B27313100240D2F /* Assets.xcassets */,
 				FA57D9E22B27313100240D2F /* Preview Content */,
 			);
@@ -139,6 +142,7 @@
 			files = (
 				FA57D9DF2B27312900240D2F /* ContentView.swift in Sources */,
 				FA57D9DD2B27312900240D2F /* Traffic_light_SwiftUIApp.swift in Sources */,
+				FA5B8DB82B27BABF003290E5 /* TrafficLightColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
